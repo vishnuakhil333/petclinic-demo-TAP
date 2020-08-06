@@ -13,3 +13,21 @@ apt install -y default-jdk
 java -version
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 echo $JAVA_HOME
+
+#######----------------############
+#Install Maven
+apt install -y maven
+mvn -version
+
+#######----------------############
+# Setup Jenkins
+#### Follow instruction form URL https://pkg.jenkins.io/debian-stable/
+#### Open Jenkins URL and Install Suggested Plugin
+#### Create a user
+
+#######----------------############
+#Install Docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker ${USER}
+sudo usermod -aG docker jenkins
