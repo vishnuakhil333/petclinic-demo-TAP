@@ -2,3 +2,14 @@
 #######----------------############
 #Create EC2 Instance for Jenkins
 #Login to EC2 Instance
+# ubuntu@<ip-address>
+
+
+#######----------------############
+#Install JAVA
+sudo su
+apt-get update -y
+apt install -y default-jdk
+java -version
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+echo $JAVA_HOME
