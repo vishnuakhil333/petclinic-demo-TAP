@@ -38,7 +38,7 @@ sudo chmod 666 /var/run/docker.sock
 sudo visudo
 
 ####Add below line
-#jenkins ALL=(ALL) NOPASSWD: ALL
+jenkins ALL=(ALL) NOPASSWD: ALL
 
 sudo systemctl restart docker
 sudo systemctl restart jenkins
